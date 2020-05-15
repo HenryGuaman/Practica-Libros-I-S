@@ -1,4 +1,5 @@
-package modelo;
+package practica;
+
 
 
 public abstract class Libro{
@@ -9,17 +10,19 @@ public abstract class Libro{
 	private String edicion;
 	private double precio;
 	
+	
+	double comision;
 
-	public Libro() {
-		
-	}
-	public Libro(int id, String titulo, String autor, String edicion, double precio, String tipo) {
+	public Libro(int id, String titulo, String autor, String edicion, double precio) {
 		
 		this.id = id;
 		this.titulo = titulo;
 		this.autor = autor;
 		this.edicion = edicion;
 		this.precio = precio;
+	}
+	public Libro() {
+		
 	}
 	public int getId() {
 		return id;
@@ -50,6 +53,25 @@ public abstract class Libro{
 	}
 	public void setPrecio(double precio) {
 		this.precio = precio;
+	}
+	
+	public void calcularComision() {
+		
+		this.setPrecio(this.getPrecio() + comision);
+		
+	}
+	
+	
+	public double getComision() {
+		return comision;
+	}
+	public void setComision(double comision) {
+		this.comision = comision;
+	}
+	@Override
+	public String toString() {
+		return "Libro [id=" + id + ", titulo=" + titulo + ", autor=" + autor + ", edicion=" + edicion + ", precio="
+				+ precio + ", comision=" + comision + "]";
 	}
 	
 	
