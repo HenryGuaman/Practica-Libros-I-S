@@ -6,7 +6,7 @@ public class Cliente {
 	private String nombre;
 	private String apellido;
 	private String telefono;
-	private Double credito;
+	private double credito;
 	public String getCedula() {
 		return cedula;
 	}
@@ -31,13 +31,13 @@ public class Cliente {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-	public Double getCredito() {
+	public double getCredito() {
 		return credito;
 	}
-	public void setCredito(Double credito) {
+	public void setCredito(double credito) {
 		this.credito = credito;
 	}
-	public Cliente(String cedula, String nombre, String apellido, String telefono, Double credito) {
+	public Cliente(String cedula, String nombre, String apellido, String telefono, double credito) {
 		
 		this.cedula = cedula;
 		this.nombre = nombre;

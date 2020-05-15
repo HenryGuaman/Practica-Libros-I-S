@@ -7,16 +7,13 @@ public abstract class Libro{
 	private String titulo;
 	private String autor;
 	private String edicion;
-	private Double precio;
-	public abstract double comision();
-    public abstract double envio();
-    public abstract double costo();
+	private double precio;
 	
 
 	public Libro() {
 		
 	}
-	public Libro(int id, String titulo, String autor, String edicion, Double precio, String tipo) {
+	public Libro(int id, String titulo, String autor, String edicion, double precio, String tipo) {
 		
 		this.id = id;
 		this.titulo = titulo;
@@ -48,10 +45,10 @@ public abstract class Libro{
 	public void setEdicion(String edicion) {
 		this.edicion = edicion;
 	}
-	public Double getPrecio() {
+	public double getPrecio() {
 		return precio;
 	}
-	public void setPrecio(Double precio) {
+	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
 	
